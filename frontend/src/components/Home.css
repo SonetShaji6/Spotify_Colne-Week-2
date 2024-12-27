@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex
+;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+    justify-content: space-evenly;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+  max-width: 200px;
+}
+  /* Cards for Tracks */
+  .track-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .track-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .track-card img {
+    border-radius: 10px;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #181818;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+  }
+  
+  .navbar input {
+    width: 60%;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+  }
+  
+  .navbar button {
+    background-color: #1db954;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar button:hover {
+    background-color: #1ed760;
+  }
+  
+  /* Player */
+  .player {
+    background-color: #181818;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #333;
+  }
+
+  /* General Styles */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Cards for Tracks */
+  .track-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .track-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .track-card img {
+    border-radius: 10px;
+  }
+  
+  /* Player */
+  .player {
+    background-color: #181818;
+    color: #fff;
+    border-top: 1px solid #333;
+  }
+  
+  

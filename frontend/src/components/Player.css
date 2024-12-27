@@ -1,0 +1,130 @@
+.player {
+    background-color: #181818;
+    color: #fff;
+    border-top: 1px solid #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .player img {
+    border-radius: 5px;
+  }
+  
+  .player button {
+    font-size: 18px;
+  }
+  
+  .player .form-range {
+    width: 150px;
+  }
+  
+  .player h5 {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .player small {
+    font-size: 14px;
+    color: #bbb;
+  }
+  
+  /* Play/Pause Button Animation */
+.play-pause-btn {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background: linear-gradient(45deg, #1db954, #1ed760);
+    color: white;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .play-pause-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .play-pause-btn.playing {
+    background: linear-gradient(45deg, #f953c6, #b91d73);
+    animation: rotate-pulse 0.5s ease-in-out;
+  }
+
+  /* Tick Button Styles */
+.player .text-success {
+    color: #1db954;
+    transition: transform 0.3s ease;
+  }
+  
+  .player .text-danger {
+    color: #ff4d4d;
+    transition: transform 0.3s ease;
+  }
+  
+  .player .text-success:hover,
+  .player .text-danger:hover {
+    transform: scale(1.2);
+  }
+  
+  .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%; /* Adjust based on parent container */
+  }
+  
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite; /* Fixed duration for all text */
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+  
+  @keyframes rotate-pulse {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .player {
+      padding: 10px;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .player img {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .player .form-range {
+      width: 80px;
+    }
+  }
+  
+  
